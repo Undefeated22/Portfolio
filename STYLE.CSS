@@ -1,0 +1,141 @@
+/* Reset some default styles to ensure consistency */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Header styles */
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Navigation styles */
+
+nav {
+    background-color: #444444e5;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #50ce7a00;
+}
+
+
+/* Section styles */
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* Portfolio item styles */
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.portfolio-item h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+    padding: 8px;
+    color: #ffffff18;
+    background-color: #33333300;
+}
+
+button::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #a8aaaf;
+    transform: scalex(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+button:hover::after {
+    transform: scaleX(1);
+}
